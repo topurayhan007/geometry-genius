@@ -94,15 +94,15 @@ document
 document
   .getElementById("pentagon-calc-btn")
   .addEventListener("click", function () {
-    const d1 = getInputValueById("pentagon-1-input");
-    const d2 = getInputValueById("pentagon-2-input");
+    const perimeter = getInputValueById("pentagon-1-input");
+    const apothem = getInputValueById("pentagon-2-input");
 
-    if (validateInputs(d1, d2) === -1) {
+    if (validateInputs(perimeter, apothem) === -1) {
       clearInputValueByName("pentagon");
       return;
     }
 
-    const area = 0.5 * d1 * d2;
+    const area = 0.5 * perimeter * apothem;
 
     if (Number.isInteger(area)) {
       createListElement("Pentagon", area);
