@@ -112,3 +112,26 @@ document
 
     clearInputValueByName("pentagon");
   });
+
+// Ellipse calculation on ellipse calculate button click
+document
+  .getElementById("ellipse-calc-btn")
+  .addEventListener("click", function () {
+    const a = getInputValueById("ellipse-1-input");
+    const b = getInputValueById("ellipse-2-input");
+
+    if (validateInputs(a, b) === -1) {
+      clearInputValueByName("ellipse");
+      return;
+    }
+
+    const area = Math.PI * a * b;
+
+    if (Number.isInteger(area)) {
+      createListElement("Ellipse", area);
+    } else {
+      createListElement("Ellipse", area.toFixed(2));
+    }
+
+    clearInputValueByName("ellipse");
+  });
