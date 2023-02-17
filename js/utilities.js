@@ -59,7 +59,7 @@ const cards = document.querySelectorAll(".card-body");
 console.log(cards);
 
 for (let i = 0; i < cards.length; i++) {
-  cards[i].addEventListener("mouseover", function () {
+  cards[i].addEventListener("mouseenter", function () {
     const hexCode = Math.floor(100000 + Math.random() * 900000);
     console.log(hexCode);
     this.style.backgroundColor = "#" + hexCode;
