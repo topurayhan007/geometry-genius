@@ -20,17 +20,277 @@
             >Geometry Genius</span
           >
         </h2>
-        <button class="bg-blue-500 rounded px-5 h-9 text-white font-bold">
+        <button
+          class="bg-blue-500 rounded px-5 h-9 text-white font-bold"
+          id="blog-btn"
+        >
           Blog
         </button>
       </nav>
     </header>
 
     <!-- Main Section -->
-    <main></main>
+    <main>
+      <!-- Card Container -->
+      <section>
+        <div class="grid grid-cols-4 gap-5 w-11/12 mx-auto mt-8 mb-10">
+          <div class="col-span-3 row-span-2 grid grid-cols-3 gap-5">
+            <!-- Triangle -->
+
+            <div
+              class="flex flex-col justify-center items-center gap-4 px-4 py-8 rounded-lg border border-1 bg-white card-body drop-shadow-lg"
+            >
+              <img src="images/triangle.png" alt="" />
+              <h3 class="text-xl font-bold">Triangle</h3>
+              <p class="text-base">Area (A) = 0.5 × b × h</p>
+              <div class="flex gap-5 px-5 justify-center items-center">
+                <div>
+                  <input
+                    type="number"
+                    placeholder="b"
+                    name=""
+                    id="tri-1-input"
+                    class="w-12 text-black bg-gray-200 rounded pl-1"
+                  />
+                  cm
+                </div>
+                <div>
+                  <input
+                    type="number"
+                    placeholder="h"
+                    name=""
+                    id="tri-2-input"
+                    class="w-12 text-black bg-gray-200 rounded pl-1"
+                  />
+                  cm
+                </div>
+              </div>
+
+              <button
+                class="bg-blue-500 w-full px-5 py-2 rounded text-base font-bold text-white"
+                id="triangle-calc-btn"
+              >
+                Calculate
+              </button>
+            </div>
+
+            <!-- Rectangle -->
+
+            <div
+              class="flex flex-col justify-center items-center gap-4 px-4 py-8 rounded-lg border border-1 bg-white card-body drop-shadow-lg"
+            >
+              <img src="images/rectangle.png" alt="" />
+              <h3 class="text-xl font-bold">Rectangle</h3>
+              <p class="text-base">Area (A) = w × l</p>
+              <div class="flex gap-5 px-5 justify-center items-center">
+                <div>
+                  <input
+                    type="number"
+                    placeholder="w"
+                    name=""
+                    id="rect-1-input"
+                    class="w-12 text-black bg-gray-200 rounded pl-1"
+                  />
+                  cm
+                </div>
+                <div>
+                  <input
+                    type="number"
+                    name=""
+                    placeholder="l"
+                    id="rect-2-input"
+                    class="w-12 text-black bg-gray-200 rounded pl-1"
+                  />
+                  cm
+                </div>
+              </div>
+
+              <button
+                class="bg-blue-500 w-full px-5 py-2 rounded text-base font-bold text-white"
+                id="rectangle-calc-btn"
+              >
+                Calculate
+              </button>
+            </div>
+
+            <!-- Parallelogram -->
+
+            <div
+              class="flex flex-col justify-center items-center gap-4 px-4 py-8 rounded-lg border border-1 bg-white card-body drop-shadow-lg"
+            >
+              <img src="images/parallelogram.png" alt="" />
+              <h3 class="text-xl font-bold">Parallelogram</h3>
+              <p class="text-base">Area (A) = b × h</p>
+              <div class="flex gap-5 px-5 justify-center items-center">
+                <div>
+                  <input
+                    type="number"
+                    placeholder="b"
+                    name=""
+                    id="para-1-input"
+                    class="w-12 text-black bg-gray-200 rounded pl-1"
+                  />
+                  cm
+                </div>
+                <div>
+                  <input
+                    type="number"
+                    name=""
+                    placeholder="h"
+                    id="para-2-input"
+                    class="w-12 text-black bg-gray-200 rounded pl-1"
+                  />
+                  cm
+                </div>
+              </div>
+
+              <button
+                class="bg-blue-500 w-full px-5 py-2 rounded text-base font-bold text-white"
+                id="parallelogram-calc-btn"
+              >
+                Calculate
+              </button>
+            </div>
+
+            <!-- Rhombus -->
+
+            <div
+              class="flex flex-col justify-center items-center gap-4 px-4 py-8 rounded-lg border border-1 bg-white card-body drop-shadow-lg"
+            >
+              <img src="images/rhombus.png" alt="" />
+              <h3 class="text-xl font-bold">Rhombus</h3>
+              <p class="text-base">
+                Area (A) = 0.5 × d<sub>1</sub> × d<sub>2</sub>
+              </p>
+              <div class="flex gap-5 px-5 justify-center items-center">
+                <div>
+                  <input
+                    type="number"
+                    placeholder="d1"
+                    name=""
+                    id="rhombus-1-input"
+                    class="w-12 text-black bg-gray-200 rounded pl-1"
+                  />
+                  cm
+                </div>
+                <div>
+                  <input
+                    type="number"
+                    name=""
+                    placeholder="d2"
+                    id="rhombus-2-input"
+                    class="w-12 text-black bg-gray-200 rounded pl-1"
+                  />
+                  cm
+                </div>
+              </div>
+
+              <button
+                class="bg-blue-500 w-full px-5 py-2 rounded text-base font-bold text-white"
+                id="rhombus-calc-btn"
+              >
+                Calculate
+              </button>
+            </div>
+
+            <!-- Pentagon -->
+
+            <div
+              class="flex flex-col justify-center items-center gap-4 px-4 py-8 rounded-lg border border-1 bg-white card-body drop-shadow-lg"
+            >
+              <img src="images/pentagon.png" alt="" />
+              <h3 class="text-xl font-bold">Pentagon</h3>
+              <p class="text-base">Area (A) = 0.5 × p × b</p>
+              <div class="flex gap-5 px-5 justify-center items-center">
+                <div>
+                  <input
+                    type="number"
+                    placeholder="p"
+                    name=""
+                    id="penta-1-input"
+                    class="w-12 text-black bg-gray-200 rounded pl-1"
+                  />
+                  cm
+                </div>
+                <div>
+                  <input
+                    type="number"
+                    name=""
+                    placeholder="b"
+                    id="penta-2-input"
+                    class="w-12 text-black bg-gray-200 rounded pl-1"
+                  />
+                  cm
+                </div>
+              </div>
+
+              <button
+                class="bg-blue-500 w-full px-5 py-2 rounded text-base font-bold text-white"
+                id="pentagon-calc-btn"
+              >
+                Calculate
+              </button>
+            </div>
+
+            <!-- Ellipse -->
+
+            <div
+              class="flex flex-col justify-center items-center gap-4 px-4 py-8 rounded-lg border border-1 bg-white card-body drop-shadow-lg"
+            >
+              <img src="images/ellipse.png" alt="" />
+              <h3 class="text-xl font-bold">Ellipse</h3>
+              <p class="text-base">Area (A) = &pi; × a × b</p>
+              <div class="flex gap-5 px-5 justify-center items-center">
+                <div>
+                  <input
+                    type="number"
+                    placeholder="a"
+                    name=""
+                    id="ellipse-1-input"
+                    class="w-12 text-black bg-gray-200 rounded pl-1"
+                  />
+                  cm
+                </div>
+                <div>
+                  <input
+                    type="number"
+                    name=""
+                    placeholder="b"
+                    id="ellipse-2-input"
+                    class="w-12 text-black bg-gray-200 rounded pl-1"
+                  />
+                  cm
+                </div>
+              </div>
+
+              <button
+                class="bg-blue-500 w-full px-5 py-2 rounded text-base font-bold text-white"
+                id="ellipse-calc-btn"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+
+          <!-- Area Calculation Container -->
+          <div
+            class="bg-white p-5 row-span-1 rounded-lg text-center border border-1 drop-shadow-lg"
+          >
+            <h4 class="text-base font-bold underline mb-4">Area Calculation</h4>
+
+            <!-- Incremental Result List -->
+            <ol class="list-decimal list-inside" id="result-list">
+              <!-- Here goes auto generated result list -->
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- JS file links -->
     <script src="js/utilities.js"></script>
-    <script src="js/utilities.js"></script>
-    <script src="js/utilities.js"></script>
-    <script src="js/utilities.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/geometry.js"></script>
+    <script src="js/result.js"></script>
   </body>
 </html>
