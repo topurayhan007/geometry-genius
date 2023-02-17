@@ -53,3 +53,15 @@ function createListElement(shape, area) {
   li.classList.add("mb-2", "items", "text-sm", "w-full");
   ol.appendChild(li);
 }
+
+// OnHover Color change
+const cards = document.querySelectorAll(".card-body");
+console.log(cards);
+
+for (let i = 0; i < cards.length; i++) {
+  cards[i].addEventListener("mouseover", function () {
+    const hexCode = Math.floor(100000 + Math.random() * 900000);
+    console.log(hexCode);
+    this.style.backgroundColor = "#" + hexCode;
+  });
+}
