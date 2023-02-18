@@ -1,5 +1,11 @@
 // triangle calculation on triangle calculate button click
 document
+  .getElementById("triangle-edit-btn")
+  .addEventListener("click", function () {
+    undisableInputField("triangle");
+  });
+
+document
   .getElementById("triangle-calc-btn")
   .addEventListener("click", function () {
     const breadth = getInputValueById("triangle-1-input");

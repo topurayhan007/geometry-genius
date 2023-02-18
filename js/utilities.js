@@ -34,12 +34,10 @@ function setTextByName(element, value1, value2) {
 }
 
 // Value edit button
-document
-  .getElementById("triangle-edit-btn")
-  .addEventListener("click", function () {
-    document.getElementById("triangle" + "-1-input").disabled = false;
-    document.getElementById("triangle" + "-2-input").disabled = false;
-  });
+function undisableInputField(element) {
+  document.getElementById(element + "-1-input").disabled = false;
+  document.getElementById(element + "-2-input").disabled = false;
+}
 
 // This function creates new list items in "Area Calculation" section
 function createListElement(shape, area) {
