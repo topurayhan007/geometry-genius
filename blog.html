@@ -10,11 +10,94 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1>Blogs</h1>
+    <!-- Navigation Section -->
 
-    <script src="js/utilities.js"></script>
+    <header class="bg-sky-100 rounded w-11/12 mt-8 mx-auto py-4 px-8">
+      <nav class="flex justify-between items-center">
+        <h2 class="text-2xl font-bold leading-none">
+          Interactive<br />
+          <span class="text-base font-semibold text-gray-500"
+            >Geometry Genius Blogs</span
+          >
+        </h2>
+        <button
+          class="bg-blue-500 rounded px-5 h-9 text-white font-bold"
+          id="go-back-btn"
+        >
+          Home
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="grid grid-cols-1 gap-5 w-11/12 mx-auto my-8">
+          <div
+            class="bg-yellow-50 rounded-lg p-5 border border-1 drop-shadow-lg"
+          >
+            <h3 class="text-xl font-semibold">
+              What is DOM and what is the purpose of DOM?
+            </h3>
+            <hr />
+            <br />
+            <p class="text-base">
+              DOM means Document Object Model. It is a sort of model which can
+              be manipulated by using JavaScript. This model is a depiction of
+              the entire HTML but in a form of object or nodes which enable the
+              programming language for better interactivity. By using this
+              object based concept of the webpage we can make the website more
+              interactive.
+            </p>
+          </div>
+          <div class="bg-pink-50 rounded-lg p-5 border border-1 drop-shadow-lg">
+            <h3 class="text-xl font-semibold">
+              How will you select HTML elements using DOM? Name the DOM methods.
+            </h3>
+            <hr />
+            <br />
+            <p class="text-base">
+              There are few ways we can select HTML elements: by ID name, by TAG
+              name, by CLASS name. Some of the methods are as follows:
+            </p>
+            <ul class="pl-5 list-disc list-inside">
+              <li>getElementById()</li>
+              <li>getElementsByClassName()</li>
+              <li>getElementsByTagName()</li>
+              <li>querySelector()</li>
+              <li>querySelectorAll()</li>
+            </ul>
+          </div>
+          <div
+            class="bg-green-50 rounded-lg p-5 border border-1 drop-shadow-lg"
+          >
+            <h3 class="text-xl font-semibold">What is a event bubble?</h3>
+            <hr />
+            <br />
+            <p class="text-base">
+              Event Bubbling is a concept similar to when someone exhales
+              underwater the bubble moves upwards. In the DOM, similar thing
+              happens when a event is triggered inside a child element or object
+              the event gradually move upwards to the parents of the child node,
+              hence the similar event is triggered in the parent as well.
+            </p>
+          </div>
+          <div class="bg-sky-50 rounded-lg p-5 border border-1 drop-shadow-lg">
+            <h3 class="text-xl font-semibold">
+              What is a callback function and why will you use it?
+            </h3>
+            <hr />
+            <br />
+            <p class="text-base">
+              Callback functions are those which can be used as a parameter to
+              another functions. Because the functions act as a object in
+              JavaScript we can pass the function as parameter, the same way we
+              pass normal objects.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script src="js/blog.js"></script>
-    <script src="js/geometry.js"></script>
-    <script src="js/result.js"></script>
   </body>
 </html>

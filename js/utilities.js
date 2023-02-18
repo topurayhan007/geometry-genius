@@ -1,3 +1,7 @@
+// Go to Blogs
+document.getElementById("blog-btn").addEventListener("click", function () {
+  location.href = "blog.html";
+});
 // This function takes any input element's value and return the value in number
 function getInputValueById(element) {
   const inputField = document.getElementById(element);
