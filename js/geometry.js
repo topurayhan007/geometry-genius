@@ -9,6 +9,7 @@ document
       clearInputValueByName("triangle");
       return;
     }
+    setTextByName("triangle", breadth, height);
 
     const area = 0.5 * breadth * height;
 

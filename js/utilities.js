@@ -27,6 +27,20 @@ function clearInputValueByName(element) {
   document.getElementById(element + "-2-input").value = "";
 }
 
+// Set text by using Id
+function setTextByName(element, value1, value2) {
+  document.getElementById(element + "-1-text").innerText = value1;
+  document.getElementById(element + "-2-text").innerText = value2;
+}
+
+// Value edit button
+document
+  .getElementById("triangle-edit-btn")
+  .addEventListener("click", function () {
+    document.getElementById("triangle" + "-1-input").disabled = false;
+    document.getElementById("triangle" + "-2-input").disabled = false;
+  });
+
 // This function creates new list items in "Area Calculation" section
 function createListElement(shape, area) {
   const ol = document.getElementById("result-list");
@@ -56,12 +70,12 @@ function createListElement(shape, area) {
 
 // OnHover Color change
 const cards = document.querySelectorAll(".card-body");
-console.log(cards);
+// console.log(cards);
 
 for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("mouseenter", function () {
     const hexCode = Math.floor(100000 + Math.random() * 900000);
-    console.log(hexCode);
+    // console.log(hexCode);
     this.style.backgroundColor = "#" + hexCode;
   });
 }

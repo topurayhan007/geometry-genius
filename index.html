@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geometry Genius</title>
 
+    <!-- Icons Link -->
+    <script
+      src="https://kit.fontawesome.com/5d04c0d980.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -56,12 +62,18 @@
               <img src="images/triangle.png" alt="" />
               <h3 class="text-xl font-bold">Triangle</h3>
               <p class="text-base">Area (A) = 0.5 × b × h</p>
+              <p>
+                b = <span id="triangle-1-text">10</span> h =
+                <span id="triangle-2-text">12</span>
+                <i class="fa-solid fa-pen-to-square" id="triangle-edit-btn"></i>
+              </p>
               <div class="flex gap-5 px-5 justify-center items-center">
                 <div>
                   <input
                     type="number"
                     placeholder="b"
                     name=""
+                    disabled
                     id="triangle-1-input"
                     class="w-20 text-black bg-gray-200 rounded pl-1"
                   />
@@ -71,6 +83,7 @@
                   <input
                     type="number"
                     placeholder="h"
+                    disabled
                     name=""
                     id="triangle-2-input"
                     class="w-20 text-black bg-gray-200 rounded pl-1"
